@@ -8,9 +8,7 @@ I = numpy.array([.1826, .1658, .1589, .1434, .1348, .1228, .1064, .09242, .07520
 #b = numpy.polyfit(I,v,1)
 
 plt.plot(I,v, 'ro') #uses matplotlib to plot voltage vs current
-plt.ylabel('some numbers')
-plt.xlabel('more numbers')
-plt.title('title')
+
 m, b = numpy.polyfit(I,v,1) #If linear looks like it's the line that fits best
 plt.plot(I, m*I + b)
 
@@ -20,12 +18,3 @@ plt.xlabel('Current (A)')
 plt.title('Voltage vs Current (Lightbulb)')
 plt.show()
 print('The slope is: ',m, 'so the equation of this line is V = ',m,'*I + ',b)
-#Please remember to use proper significant figures. 
-# plt.plot(I,v, 'ro') #uses matplotlib to plot voltage vs current
-
-# plt.plot(I, m*I+b)
-# #plt.plot(I,v, 'ro') #uses matplotlib to plot voltage vs current
-
-# plt.ylabel('Voltage (Volts)')
-# plt.xlabel('Current (A)')
-# plt.title('LightBublb Graph')
